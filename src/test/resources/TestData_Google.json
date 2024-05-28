@@ -1,5 +1,10 @@
 {
   "googleSearchInput": "Giza Systems",
   "googleSearchExpectedTitle": "Giza",
-  "googleSearchExpectedResults": "Giza"
+  "googleSearchExpectedResults": "Giza",
+  "webDriverSearch": {
+  "SearchInput": "Selenium WebDriver",
+  "ExpectedSearchResults": "WebDriver",
+    "newatt": "null"
+     }
 }
