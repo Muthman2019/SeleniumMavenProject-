@@ -22,8 +22,16 @@ JsonFileManager testData;
     new GoogleSearchResultPageFluentDesign(driver)
             .assertOnPageTitle(testData.getTestData("googleSearchExpectedTitle"))
             .assertOnFirstSearchResult(testData.getTestData("googleSearchExpectedResults"));
-
-
+    }
+    @Test
+    public void searchForSeleniumWebDriver(){
+        testData = new JsonFileManager("src/test/resources/TestData_Google.json");
+        new GoogleHomePageFluentDesign(driver)
+                .navigateToGoogleSearchHomePage("https://www.google.com/ncr")
+                .googleSearch(testData.getTestData("webDriverSearch.SearchInput"));
+        new GoogleSearchResultPageFluentDesign(driver)
+                //.assertOnPageTitle(testData.getTestData("googleSearchExpectedTitle"))
+                .assertOnFirstSearchResult(testData.getTestData("webDriverSearch.ExpectedSearchResults"));
     }
   /* @BeforeMethod
     public void beforeMethod(){
