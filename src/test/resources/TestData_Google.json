@@ -4,6 +4,7 @@
   "googleSearchExpectedResults": "Giza",
   "webDriverSearch": {
   "SearchInput": "Selenium WebDriver",
-  "ExpectedSearchResults": "WebDriver"
+  "ExpectedSearchResults": "WebDriver",
+    "newatt": "null"
      }
 }
